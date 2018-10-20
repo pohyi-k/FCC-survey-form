@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="style.css" />
+</head>
+<body>
+    <h1 id="title">Survey Form</h1>
+    <div class="container">
+      <p id="description">Let us know how we can improve freeCodeCamp</p>
+      <form id="survey-form">
+
+        <div>
+            <label class="left" for="name" id="name-label" required>*Name: </label>
+            <input id="name" type="text" name="username" placeholder="Enter your name" required>
+        </div>
+        
+        
+        <div>
+            <label class="left" for="email" id="email-label" required>*Email: </label>  
+            <input id="email" type="email" name="email" placeholder="Enter your email" required>
+        </div>
+        
+        <!-- User Story #6: If I enter an email that is not formatted correctly, I will see an HTML5 validation error. -->
+        <!-- User Story #8: If I enter non-numbers in the number input, I will see an HTML5 validation error. -->
+        <!-- User Story #9: If I enter numbers outside the range of the number input, which are defined by the min and max attributes, I will see an HTML5 validation error. -->
+        <div>
+            <label class="left" for="age" id="number-label" required>*Age: </label>
+            <input id="number" type="number" name="number" min="1" max="150" placeholder="Age">
+        </div>
+        
+        <div>
+            <label class="left" for="current-role">Which option best describes your current role?</label>
+                <select id="dropdown">
+                <option>Select an option</option>
+                <option selected>Student</option>
+                <option>Full Time Job</option>
+                <option>Full Time Learner</option>
+                <option>Prefer not to say</option>
+                <option>Other</option>
+                </select> 
+        </div>
+        
+        <fieldset>
+            <legend>
+                * How likely is that you would recommend freeCodeCamp to a friend?
+            </legend>
+            <ul>
+                <li>
+                    <input id="Definitely" type="radio" name="choice" value="definitely">
+                    <label for="Definitely">Definitely</label>
+                </li>
+                <li>
+                    <input id="Maybe" type="radio" name="choice" value="maybe">
+                    <label for="Maybe">Maybe</label>
+                </li>
+                <li>
+                    <input id="Not sure" type="radio" name="choice" value="not sure">
+                    <label for="Not sure">Not sure</label>
+                </li>
+            </ul>
+        </fieldset>
+
+        <div>
+            <label for="like">What do you like most in FCC: </label>
+            <select id="like">
+                <option selected>Select an option</option>
+                <option>Challenges</option>
+                <option>Project</option>
+                <option>Community</option>
+                <option>Open Source</option>
+            </select>
+        </div>
+        
+        <fieldset>
+            <legend>
+                Things that should be improved in the future (Check all that apply):
+            </legend>
+            <ul>
+                <li>
+                    <input id="Front-end Projects" type="checkbox" name="improvements" value="Front-end Projects">
+                    <label for="Front-end Projects">Front-end Projects</label>
+                </li>
+                <li>
+                    <input id="Back-end Projects" type="checkbox" name="improvements" value="Back-end Projects">   
+                    <label for="Back-end Projects">Back-end Projects</label>
+                </li>
+                <li>
+                    <input id="Data Visualization" type="checkbox" name="improvements" value="Data Visualization">
+                    <label for="Data Visualization">Data Visualization</label>
+                </li>
+                <li>
+                    <input id="Challenges" type="checkbox" name="improvements" value="Challenges">
+                    <label for="Challenges">Challenges</label>
+                </li>
+                <li>
+                    <input id="Open Source Community" type="checkbox" name="improvements" value="Open Source Community">
+                    <label for="Open Source Community">Open Source Community</label>
+                </li>
+                <li>
+                    <input id="Gitter help rooms" type="checkbox" name="improvements" value="Gitter help rooms">
+                    <label for="Gitter help rooms">Gitter help rooms</label>
+                </li>
+                <li>
+                    <input id="Videos" type="checkbox" name="improvements" value="Videos">
+                    <label for="Videos">Videos</label>
+                </li>
+                <li>
+                    <input id="City Meetups" type="checkbox" name="improvements" value="City Meetups">
+                    <label for="City Meetups">City Meetups</label>
+                </li>
+                <li>
+                    <input id="Wiki" type="checkbox" name="improvements" value="Wiki">
+                    <label for="Wiki">Wiki</label>
+                </li>
+                <li>
+                    <input id="Forum" type="checkbox" name="improvements" value="Forum">
+                    <label for="Forum">Forum</label>
+                </li>
+                <li>
+                    <input id="Additional Courses" type="checkbox" name="improvements" value="Additional Courses">
+                    <label for="Additional Courses">Additional Courses</label>
+                </li>
+            </ul>
+        </fieldset>   
+            
+        <div>
+            <label for="feedback">Any Comments or Suggestions?</label>
+            <textarea name="comment" rows="4" cols="50" maxlength="500" placeholder="Enter your comment here..."></textarea>
+        </div>
+          
+        <div class="styled">
+          <button class="styled" id="submit">Submit</button>
+        </div>
+  
+      </form>
+</body>
+</html>
+
+  
+  <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+  
+  <!-- 
+  
+  Hello Camper!
+  
+  For now, the test suite only works in Chrome! Please read the README below in the JS Editor before beginning. Feel free to delete this message once you have read it. Good luck and Happy Coding! 
+  
+  - The freeCodeCamp Team 
+  
+  -->
+  
